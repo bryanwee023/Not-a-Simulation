@@ -1,0 +1,410 @@
+{
+    "skills": [
+        {
+            "name": "Bat Swing",
+            "description": "Swing your bat to deal damage and parry projectiles",
+            "dependencies": [ "Faster Swings", "Dashstrike" ],
+            "preclusions": [],
+
+            "type": 0,
+            "path": "Abilities/Swings/Basic Swing",
+
+            "baseStats": [ "damage", "cooldown", "dashstrike" ],
+            "baseValues": [ 20, 0.25, 0 ],
+
+            "keyword": "Damage",
+            "format": "{0:F0}",
+            "upStats": "damage",
+            "upValues": [ 20, 32, 41, 47, 52, 57 ]
+
+        },
+
+        {
+            "name": "Faster Swings",
+            "description": "Swing your bat even faster",
+            "dependencies": [ "Flame On!", "Cursed Swing", "Motion of the Ocean" ],
+            "preclusions": [ "Dashstrike" ],
+
+            "type": 0,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "cooldown",
+            "upValues": [ 0.15 ]
+        },
+
+        {
+            "name": "Dashstrike",
+            "description": "Attack while dashing to deal more damage",
+            "dependencies": [ "Flame On!", "Cursed Swing", "Motion of the Ocean" ],
+            "preclusions": [ "Faster Swings" ],
+
+            "type": 0,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "dashstrike",
+            "upValues": [ 1 ]
+        },
+
+        {
+            "name": "Flame On!",
+            "description": "Your attack burns enemies, dealing damage over time",
+            "dependencies": [ "Forward Flames" ],
+            "preclusions": [ "Cursed Swing", "Motion of the Ocean" ],
+
+            "type": 0,
+            "path": "Abilities/Swings/Fire Swing",
+
+            "baseStats": [ "burnDamage", "forwardFlames" ],
+            "baseValues": [ 20, 0 ],
+
+            "keyword": "Burn Damage",
+            "format": "{0:F0}/s",
+            "upStats": "burnDamage",
+            "upValues": [ 20, 27, 32, 36, 39, 42 ]
+        },
+
+        {
+            "name": "Forward Flames",
+            "description": "Every first swing launches a fiery wave that deals damage",
+            "dependencies": [],
+            "preclusions": [],
+
+            "type": 0,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "Flame Damage",
+            "format": "{0:F0}",
+            "upStats": "forwardFlames",
+            "upValues": [ 20, 25, 30, 35 ]
+
+        },
+
+        {
+            "name": "Cursed Swing",
+            "description": "Your attacks has a chance of cursing enemies, making them more susceptible to damage",
+            "dependencies": [ "Greater Demons" ],
+            "preclusions": [ "Flame On!", "Motion of the Ocean" ],
+
+            "type": 0,
+            "path": "Abilities/Swings/Cursed Swing",
+
+            "baseStats": [ "curseChance", "curseEffect" ],
+            "baseValues": [ 15, 20 ],
+
+            "keyword": "Curse Chance",
+            "format": "{0:F0}%",
+            "upStats": "curseChance",
+            "upValues": [ 15, 20, 24, 27, 30 ]
+
+        },
+
+        {
+            "name": "Greater Demons",
+            "description": "Your curse effects from Cursed Swing become more potent",
+            "dependencies": [],
+            "preclusions": [],
+
+            "type": 0,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "Curse Effect",
+            "format": "+{0:F0}%",
+            "upStats": "curseEffect",
+            "upValues": [ 25, 32, 37, 40 ]
+        },
+
+        {
+            "name": "Motion of the Ocean",
+            "description": "Your attacks knocks back enemies",
+            "dependencies": [],
+            "preclusions": [ "Flame On!", "Cursed Swing" ],
+
+            "type": 0,
+            "path": "Abilities/Swings/Tidal Swing",
+
+            "baseStats": [ "attackMultiplier" ],
+            "baseValues": [ 30 ],
+
+            "keyword": "Bonus Swing Damage",
+            "format": "+{0:F0}%",
+            "upStats": "attackMultiplier",
+            "upValues": [ 30, 38, 44, 48, 50 ]
+
+        },
+
+        {
+            "name": "Bat Spin",
+            "description": "Spin to deal damage over a large area",
+            "dependencies": [ "Larger Spins", "Faster Spins" ],
+            "preclusions": [],
+
+            "type": 1,
+            "path": "Abilities/Spins/Bat Spin",
+
+            "baseStats": [ "damage", "radius", "delay" ],
+            "baseValues": [ 50, 17, 0.33 ],
+
+            "keyword": "Damage",
+            "format": "{0:F0}",
+            "upStats": "damage",
+            "upValues": [ 50, 70, 85, 95, 100 ]
+
+        },
+
+        {
+            "name": "Larger Spins",
+            "description": "Your spin affects a greater area",
+            "dependencies": [ "Scorching Spin", "Evil Spin", "Tidal Spin" ],
+            "preclusions": [ "Faster Spins" ],
+
+            "type": 1,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "radius",
+            "upValues": [ 25 ]
+
+        },
+
+        {
+            "name": "Faster Spins",
+            "description": "Your spin has a lessened delay",
+            "dependencies": [ "Scorching Spin", "Evil Spin", "Tidal Spin" ],
+            "preclusions": [ "Larger Spins" ],
+
+            "type": 1,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "delay",
+            "upValues": [ 0.1 ]
+
+        },
+
+        {
+            "name": "Scorching Spin",
+            "description": "Your spin burns your enemies, dealing damage over time",
+            "dependencies": [ "Everlasting Flame" ],
+            "preclusions": [ "Evil Spin", "Tidal Spin" ],
+
+            "type": 1,
+            "path": "Abilities/Spins/Fire Spin",
+
+            "baseStats": [ "burnDamage", "burnDuration" ],
+            "baseValues": [ 10, 4 ],
+
+            "keyword": "Burn Damage",
+            "format": "{0:F0}/s",
+            "upStats": "burnDamage",
+            "upValues": [ 10, 15, 17, 19, 20 ]
+
+        },
+
+        {
+            "name": "Everlasting Flame",
+            "description": "Your burn effects from Scorching Spin last longer",
+            "dependencies": [],
+            "preclusions": [],
+
+            "type": 1,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "Burn Duration",
+            "format": "{0:F2}s",
+            "upStats": "burnDuration",
+            "upValues": [ 5, 5.75, 6.25, 6.75 ]
+
+        },
+
+        {
+            "name": "Evil Spin",
+            "description": "Your spin curses your enemies, making them more susceptible to damage",
+            "dependencies": [ "Hidden Demons" ],
+            "preclusions": [ "Scorching Spin", "Tidal Spin" ],
+
+            "type": 1,
+            "path": "Abilities/Spins/Cursed Spin",
+
+            "baseStats": [ "curseEffect", "curseDuration" ],
+            "baseValues": [ 10, 4 ],
+
+            "keyword": "Curse Effect",
+            "format": "{0:F0}",
+            "upStats": "curseEffect",
+            "upValues": [ 15, 19, 22, 24, 25 ]
+
+        },
+
+        {
+            "name": "Hidden Demons",
+            "description": "Your curse effects from Evil Spin are more potent",
+            "dependencies": [],
+            "preclusions": [],
+
+            "type": 1,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "Curse Duration",
+            "format": "{0:F1}s",
+            "upStats": "curseDuration",
+            "upValues": [ 4, 5, 5.5, 6 ]
+
+        },
+
+        {
+            "name": "Tidal Spin",
+            "description": "Your spin drastically knocks back enemies and deals bonus damage",
+            "dependencies": [],
+            "preclusions": [ "Scorching Spin", "Evil Spin" ],
+
+            "type": 1,
+            "path": "Abilities/Spins/Tidal Spin",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "",
+            "upValues": []
+        },
+
+        {
+            "name": "Dash",
+            "description": "Gain a burst of speed",
+            "dependencies": [ "Double Dash" ],
+            "preclusions": [],
+
+            "type": 2,
+            "path": "Abilities/Dashes/Basic Dash",
+
+            "baseStats": [ "burst", "dashPower" ],
+            "baseValues": [ 1, 0 ],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "",
+            "upValues": []
+        },
+
+        {
+            "name": "Double Dash",
+            "description": "Dash more times in a row",
+            "dependencies": [ "Explosive Dash", "Vacuum Dash", "Cursed Dash", "Parry Dash" ],
+            "preclusions": [],
+
+            "type": 2,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "Consecutive Dashes",
+            "format": "{0:F0}",
+            "upStats": "burst",
+            "upValues": [ 2, 3 ]
+        },
+
+        {
+            "name": "Explosive Dash",
+            "description": "Drop an explosive dynamite when you dash",
+            "dependencies": [],
+            "preclusions": [ "Vacuum Dash", "Cursed Dash", "Parry Dash" ],
+
+            "type": 2,
+            "path": "Abilities/Dashes/Explosive Dash",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "Explosive Damage",
+            "format": "{0:F0}",
+            "upStats": "dashPower",
+            "upValues": [ 50, 65, 75, 80, 85 ]
+        },
+
+        {
+            "name": "Vacuum Dash",
+            "description": "Drop a Vacuum Vortex when you dash",
+            "dependencies": [],
+            "preclusions": [ "Explosive Dash", "Cursed Dash", "Parry Dash" ],
+
+            "type": 2,
+            "path": "Abilities/Dashes/Vacuum Dash",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "Vortex Damage",
+            "format": "{0:F0}",
+            "upStats": "dashPower",
+            "upValues": [ 20, 28, 34, 38, 40 ]
+        },
+
+        {
+            "name": "Cursed Dash",
+            "description": "Drop a Curse Cloud when you dash",
+            "dependencies": [],
+            "preclusions": [ "Explosive Dash", "Vacuum Dash", "Parry Dash" ],
+
+            "type": 2,
+            "path": "Abilities/Dashes/Cursed Dash",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "Cloud Damage",
+            "format": "{0:F0}",
+            "upStats": "dashPower",
+            "upValues": [ 20, 28, 34, 38, 40 ]
+        },
+
+        {
+            "name": "Parry Dash",
+            "description": "Parry projectiles and become temporarily immune when you dash",
+            "dependencies": [],
+            "preclusions": [ "Vacuum Dash", "Cursed Dash", "Explosive Dash" ],
+
+            "type": 2,
+            "path": "Abilities/Dashes/Parry Dash",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "",
+            "upValues": []
+        }
+    ]
+}

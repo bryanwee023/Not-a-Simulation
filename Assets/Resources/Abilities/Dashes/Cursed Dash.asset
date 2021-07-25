@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541c7aa73a4d48788c2e98c9216b717, type: 3}
+  m_Name: Cursed Dash
+  m_EditorClassIdentifier: 
+  name: Cursed Dash
+  description: Cast a curse cloud as you dash, making enemies more susceptible to
+    damage
+  icon: {fileID: 0}
+  dashForce: 70
+  dashCooldown: 0.5
+  dashTime: 0.3
+  power: {fileID: 1500295937961512725, guid: ed5fdbdcc6fd34c138795b4f4e567073, type: 3}
+  burst: 1
+  dashVFX: {fileID: 4590737640803682659, guid: 9c1f14ccf0e5b4a0da699f8aa1c7529c, type: 3}

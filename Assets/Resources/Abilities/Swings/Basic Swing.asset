@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74557ef34053e4101bf260825d25bebf, type: 3}
+  m_Name: Basic Swing
+  m_EditorClassIdentifier: 
+  baseCooldown: 0
+  slashes:
+  - {fileID: 7262317964278879980, guid: 1d7309524e6f54dcc84537c5285b7452, type: 3}
+  - {fileID: 8523089570216930145, guid: f9b4af16eaa19482989162316c4a10e7, type: 3}
+  - {fileID: 6175866861785911136, guid: 79c9ca874fad94e49815da48c5485453, type: 3}
+  dashStrikeVFX: {fileID: 1177667873192058757, guid: 9cd25ffeeaa154bdba98931d3e67e816,
+    type: 3}
+  staminaBar: {fileID: 1635045036554190945, guid: a0d74a8370b494a6d931dcee8f6a87d4,
+    type: 3}

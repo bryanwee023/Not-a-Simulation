@@ -1,0 +1,29 @@
+Steps for Animated Grass:
+
+- You have to create an empty gameobject (Root) and add a Grass prefab (Prefabs/Vegetation folder) as his
+  child. You MUSTN'T move grass prefabs (These prefabs have animations that moves the prefab when you play
+  the scene, you only must move the root gameobject).
+
+- Add 2 components to Grass prefab previously selected: 
+
+	- "Randomize Animator Parameter" Script with next parameters:
+		- Parameter: Random
+		- Min Value: 1
+		- Max Value: 4 (There are 4 animations but you can create new animations for more grass
+		  movement varation with Unity Animator)
+		- Min Time/Max Time (You can choose different values for different results)
+
+	- An Animator with "GrassController" applied in controller slot of this component.
+
+- Desactivate Static Object in grass prefab because animation are not compatible with bake objects (All prefabs 
+  are Statics for Global Ilumination baked) 
+
+- You can modify Parameters of Animation transitions into Grass Controller ("GrassController") like 
+  "Transition Duration" for better results of grass movement.
+
+- You can add new animations (Previously mentioned) created with the unity animator into the "GrassController" but
+  it's important to change "Max Value" of "Randomize Animator Parameter" Script with total numbers of animations
+  applied into "GrassController", and REMEMBER to create transitions that connect these new animations with all 
+  animations already created with the same values. 
+
+- 1 Simple Scene is also included to show an animated grass example (Grass Test Scene).

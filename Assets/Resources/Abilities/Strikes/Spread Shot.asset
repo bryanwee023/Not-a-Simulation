@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388661912969941e0afdc7765a7592f4, type: 3}
+  m_Name: Spread Shot
+  m_EditorClassIdentifier: 
+  name: Spread Shot
+  description: Your strikes fans out as 3 strikes with reduced range
+  icon: {fileID: 0}
+  attack: 20
+  range: 48
+  chargeTime: 0.6
+  cooldown: 0
+  backstab: 1
+  aimIndicator: {fileID: 7073557183236999750, guid: c797441fd634d43ad87ef226a563e2ab,
+    type: 3}
+  strikeVFX: {fileID: 6710173126755435774, guid: 7127bff93037048659769f5e9bb8ec1b,
+    type: 3}
+  chargeVFX: {fileID: 4909168719628522242, guid: 74523fa9442cd42739ae04768a6dc21e,
+    type: 3}

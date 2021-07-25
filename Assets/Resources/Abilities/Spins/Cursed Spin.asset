@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ce28b47c658e49268cda22075204a55, type: 3}
+  m_Name: Cursed Spin
+  m_EditorClassIdentifier: 
+  name: Cursed Spin
+  description: Your spin attacks curses enemies, making them more susceptible to
+    damage
+  icon: {fileID: 0}
+  damage: 60
+  radius: 17
+  delay: 0.2
+  specialTime: 0.4
+  cooldown: 0.4
+  spinVFX: {fileID: 5635278374799838730, guid: a631ac7e6c271487e88d89174da9fd10, type: 3}
+  curseMultiplier: 0.2
+  curseDuration: 4
+  curseMarkerVFX: {fileID: 0}

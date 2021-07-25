@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6a4e34139f24bc3986ec57cd9cc8a9, type: 3}
+  m_Name: Fire Swing
+  m_EditorClassIdentifier: 
+  baseCooldown: 0
+  slashes:
+  - {fileID: 7262317964278879980, guid: 9fe96363e891c4a6d911eb86cc199d1d, type: 3}
+  - {fileID: 8523089570216930145, guid: 468052930d43745eba1e11da96fac15c, type: 3}
+  - {fileID: 6175866861785911136, guid: c5467023b3c8342f28bc1b82c4c23ce6, type: 3}
+  dashStrikeVFX: {fileID: 1177667873192058757, guid: fef3018b98fa8480d8d707af8269cb0c,
+    type: 3}
+  staminaBar: {fileID: 1635045036554190945, guid: a0d74a8370b494a6d931dcee8f6a87d4,
+    type: 3}
+  burnDuration: 3
+  burnMarker: {fileID: 8518239381092752976, guid: 41d9ecbd30d5d41f7af28087e06a4728,
+    type: 3}
+  forwardFlameVFX: {fileID: 1177667873192058757, guid: 38efc12a8e2684060b91a3d0e4baa68a,
+    type: 3}

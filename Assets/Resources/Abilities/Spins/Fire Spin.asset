@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4c950d4a12e24e66a1e2ba9e60222a5, type: 3}
+  m_Name: Fire Spin
+  m_EditorClassIdentifier: 
+  name: Fire Spin
+  description: Your spin attacks burns enemies, dealing damage over time
+  icon: {fileID: 0}
+  specialTime: 0.4
+  cooldown: 0.4
+  spinVFX: {fileID: 5635278374799838730, guid: 15de83f5871aa4e7a8fd19ae1f6abe74, type: 3}
+  burnMarker: {fileID: 8518239381092752976, guid: 41d9ecbd30d5d41f7af28087e06a4728,
+    type: 3}

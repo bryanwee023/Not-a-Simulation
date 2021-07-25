@@ -1,0 +1,329 @@
+{
+    "skills": [
+
+        {
+            "name": "Yoyo Strike",
+            "description": "Aim to throw your yoyo, dealing ranged damage",
+            "dependencies": [ "Backstab", "Rapid Fire" ],
+            "preclusions": [],
+
+            "type": 0,
+            "path": "Abilities/Strikes/Yoyo Strike",
+
+            "baseStats": [ "damage", "chargeTime", "backstab" ],
+            "baseValues": [ 30, 0.8, 0 ],
+
+            "keyword": "Damage",
+            "format":  "{0:F0}",
+            "upStats": "damage",
+            "upValues": [ 36, 50, 62, 72, 80, 88, 94 ]
+        },
+
+        {
+            "name": "Backstab",
+            "description": "Deal bonus damage when striking enemies from behind",
+            "dependencies": [ "Spread Shots", "Explosive Shots", "Quick Reflexes" ],
+            "preclusions": [ "Rapid Fire" ],
+
+            "type": 0,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "backstab",
+            "upValues": [ 1 ]
+        },
+
+        {
+            "name": "Rapid Fire",
+            "description": "Reduce your yoyo attack charge time",
+            "dependencies": [ "Spread Shots", "Explosive Shots", "Quick Reflexes" ],
+            "preclusions": [ "Backstab" ],
+
+            "type": 0,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "chargeTime",
+            "upValues": [ 0.4 ]
+        },
+
+        {
+            "name": "Spread Shots",
+            "description": "Your shots fan out into 3",
+            "dependencies": [],
+            "preclusions": [ "Explosive Shots", "Quick Reflexes" ],
+
+            "type": 0,
+            "path": "Abilities/Strikes/Spread Shot",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "",
+            "upValues": []
+        },
+
+        {
+            "name": "Explosive Shots",
+            "description": "Your shots reload slower, but drop a dynamite when it hits enemies",
+            "dependencies": [],
+            "preclusions": [ "Spread Shots", "Quick Reflexes" ],
+
+            "type": 0,
+            "path": "Abilities/Strikes/Explosive Shot",
+
+            "baseStats": [ "attackPower" ],
+            "baseValues": [ 50 ],
+
+            "keyword": "Explosive Damage",
+            "format": "{0:F0}",
+            "upStats": "attackPower",
+            "upValues": [ 50, 66, 78, 86, 90, 92 ]
+        },
+
+        {
+            "name": "Quick Reflexes",
+            "description": "Time slows when you aim",
+            "dependencies": [],
+            "preclusions": [ "Spread Shots", "Explosive Shots" ],
+
+            "type": 0,
+            "path": "Abilities/Strikes/Quick Reflexes",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "",
+            "upValues": []
+        },
+
+        {
+            "name": "Grappling Hook",
+            "description": "",
+            "dependencies": [ "Carpet Bomb", "Chemical Warfare", "Adrenaline Rush" ],
+            "preclusions": [],
+
+            "type": 1,
+            "path": "Abilities/Grapples/Yoyo Grapple",
+
+            "baseStats": [ "isAdrenaline", "bombCount", "specialPower" ],
+            "baseValues": [ 0, 0, 0 ],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "",
+            "upValues": []
+        },
+
+        {
+            "name": "Carpet Bomb",
+            "description": "Lay Explosive Dynamites along your grappling path",
+            "dependencies": [ "More Bombs" ],
+            "preclusions": [ "Chemical Warfare", "Adrenaline Rush" ],
+
+            "type": 1,
+            "path": "Abilities/Grapples/Carpet Bomb",
+
+            "baseStats": [ "bombCount" ],
+            "baseValues": [ 3 ],
+
+            "keyword": "Bomb Damage",
+            "format": "{0:F0}",
+            "upStats": "specialPower",
+            "upValues": [ 40, 56, 68, 76, 80 ]
+        },
+
+        {
+            "name": "Chemical Warfare",
+            "description": "Lay Curse Clouds along your grappling path",
+            "dependencies": [ "More Bombs" ],
+            "preclusions": [ "Carpet Bomb", "Adrenaline Rush" ],
+
+            "type": 1,
+            "path": "Abilities/Grapples/Chemical Warfare",
+
+            "baseStats": [ "bombCount" ],
+            "baseValues": [ 3 ],
+
+            "keyword": "Cloud Damage",
+            "format": "{0:F0}",
+            "upStats": "specialPower",
+            "upValues": [ 15, 25, 35, 45, 55 ]
+        },
+
+        {
+            "name": "More Bombs",
+            "description": "Drop more bombs along your grappling path",
+            "dependencies": [],
+            "preclusions": [],
+
+            "type": 1,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "No. of Bombs",
+            "format": "{0:F0}",
+            "upStats": "bombCount",
+            "upValues": [ 4, 5 ]
+        },
+
+        {
+            "name": "Adrenaline Rush",
+            "description": "Time slows when you aim your special",
+            "dependencies": [ "Body Torpedo" ],
+            "preclusions": [ "Carpet Bomb", "Chemical Warfare" ],
+
+            "type": 1,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "isAdrenaline",
+            "upValues": [ 1 ]
+        },
+
+        {
+            "name": "Body Torpedo",
+            "description": "Deal damage to enemies along your grappling path",
+            "dependencies": [],
+            "preclusions": [],
+
+            "type": 1,
+            "path": "Abilities/Grapples/Body Torpedo",
+
+            "baseStats": [ "torpedoDamage" ],
+            "baseValues": [ 30 ],
+
+            "keyword": "Torpedo Damage",
+            "format": "{0:F0}",
+            "upStats": "torpedoDamage",
+            "upValues": [ 30, 35, 40, 45, 50 ]
+        },
+
+
+        {
+            "name": "Dash",
+            "description": "Gain a burst of speed",
+            "dependencies": [ "Double Dash" ],
+            "preclusions": [],
+
+            "type": 2,
+            "path": "Abilities/Dashes/Basic Dash",
+
+            "baseStats": [ "burst", "dashPower" ],
+            "baseValues": [ 1, 0 ],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "",
+            "upValues": []
+        },
+
+        {
+            "name": "Double Dash",
+            "description": "Dash more times in a row",
+            "dependencies": [ "Explosive Dash", "Vacuum Dash", "Cursed Dash", "Parry Dash" ],
+            "preclusions": [],
+
+            "type": 2,
+            "path": "",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "Consecutive Dashes",
+            "format": "{0:F0}",
+            "upStats": "burst",
+            "upValues": [ 2, 3 ]
+        },
+
+        {
+            "name": "Explosive Dash",
+            "description": "Drop an explosive dynamite when you dash",
+            "dependencies": [],
+            "preclusions": [ "Vacuum Dash", "Cursed Dash", "Parry Dash" ],
+
+            "type": 2,
+            "path": "Abilities/Dashes/Explosive Dash",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "Explosive Damage",
+            "format": "{0:F0}",
+            "upStats": "dashPower",
+            "upValues": [ 50, 65, 75, 80, 85 ]
+        },
+
+        {
+            "name": "Vacuum Dash",
+            "description": "Drop a Vacuum Vortex when you dash",
+            "dependencies": [],
+            "preclusions": [ "Explosive Dash", "Cursed Dash", "Parry Dash" ],
+
+            "type": 2,
+            "path": "Abilities/Dashes/Vacuum Dash",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "Vortex Damage",
+            "format": "{0:F0}",
+            "upStats": "dashPower",
+            "upValues": [ 20, 28, 34, 38, 40 ]
+        },
+
+        {
+            "name": "Cursed Dash",
+            "description": "Drop a Curse Cloud when you dash",
+            "dependencies": [],
+            "preclusions": [ "Explosive Dash", "Vacuum Dash", "Parry Dash" ],
+
+            "type": 2,
+            "path": "Abilities/Dashes/Cursed Dash",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "Cloud Damage",
+            "format": "{0:F0}",
+            "upStats": "dashPower",
+            "upValues": [ 20, 28, 34, 38, 40 ]
+        },
+
+        {
+            "name": "Parry Dash",
+            "description": "Parry projectiles and become temporarily immune when you dash",
+            "dependencies": [],
+            "preclusions": [ "Vacuum Dash", "Cursed Dash", "Explosive Dash" ],
+
+            "type": 2,
+            "path": "Abilities/Dashes/Parry Dash",
+
+            "baseStats": [],
+            "baseValues": [],
+
+            "keyword": "",
+            "format": "",
+            "upStats": "",
+            "upValues": []
+        }
+    ]
+}

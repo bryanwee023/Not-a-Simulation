@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c837894477fc245069ba4d295fd748e5, type: 3}
+  m_Name: Cursed Swing
+  m_EditorClassIdentifier: 
+  baseCooldown: 0
+  slashes:
+  - {fileID: 7262317964278879980, guid: 842f860ee984348f0bed79be407d5cf6, type: 3}
+  - {fileID: 8523089570216930145, guid: a7326c701cbb74fdca1b2b3434ef9c43, type: 3}
+  - {fileID: 6175866861785911136, guid: 625c09db68ac247c8ae74ec4715446aa, type: 3}
+  dashStrikeVFX: {fileID: 1177667873192058757, guid: 6be945eb9621749a2b3b66b3afec7ea9,
+    type: 3}
+  staminaBar: {fileID: 1635045036554190945, guid: a0d74a8370b494a6d931dcee8f6a87d4,
+    type: 3}
